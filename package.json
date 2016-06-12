@@ -1,0 +1,37 @@
+{
+  "name": "cubic-interp",
+  "version": "0.1.0",
+  "description": "Cubic interpolation as implemented by Jason Bevins in libnoise.",
+  "homepage": "",
+  "author": {
+    "name": "Douglas Morrow",
+    "email": "douglas.p.morrow@gmail.com"
+  },
+  "main": "index.js",
+  "keywords": [
+    "cubic interpolation",
+    "interpolation"
+  ],
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.3",
+    "mocha": "*",
+    "onchange": "^2.5.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dpmorrow/cubic-interp.git"
+  },
+  "scripts": {
+    "typings": "typings i",
+    "build": "tsc src/index.ts -t ES5 --module commonjs -d --outDir ./",
+    "build-test": "tsc test/test.ts typings/index.d.ts -t ES5",
+    "test": "mocha",
+    "build+test": "npm run build && npm run build-test && npm run test",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
+    "watch": "onchange \"src/*.ts\" \"test/*.ts\" -i -e \"**/*.d.ts\" -- npm run build+test"
+  },
+  "license": "LGPL"
+}
