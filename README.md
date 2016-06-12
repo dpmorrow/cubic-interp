@@ -1,5 +1,5 @@
 # cubic-interp [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Cubic interpolation as implemented by Jason Bevins in libnoise.
+> Cubic interpolation function as implemented by Jason Bevins in libnoise.
 
 ## Installation
 
