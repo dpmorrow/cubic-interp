@@ -33,7 +33,7 @@ This project uses [typescript](https://github.com/Microsoft/TypeScript) as its b
 
 ## Testing
 
-This project is using [mocha](http://visionmedia.github.io/mocha/) for unit testing.
+This project is using [mocha](http://mochajs.org/) for unit testing.
 
 - Compile and run tests: `$ npm run build+test`
 - Watch: `$npm run watch`
